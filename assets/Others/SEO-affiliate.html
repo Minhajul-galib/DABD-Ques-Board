@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency Bd | SEO & Affiliate</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="container pb-5">
+    <div class="form-main row pt-5">
+        <div class="form-div col-lg-6 text-center">
+            <h4 class="pt-4 pb-3 text-center">SEO & Affiliate Related Question</h4>
+            <form method="post" name="SEO-Affiliate" action="">
+                <div class="form-input">
+                    <input class="w-100" name="Student Name" type="text" placeholder="Your Name">
+                </div>    
+                <div class="form-input">
+                    <textarea class="w-100 my-2" name="Question" id="" rows="4" width="100" placeholder="Write Your Question"></textarea>
+                </div>
+                    <input class="all-button" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="sheet-div col-lg-6 mt-lg-0 mt-4 text-center">
+            <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/1hIILfXI-p1FrSfoPmYBUncfWDWPWPpZmGMUKIuRxXd8/edit?usp=sharing"></iframe>
+        </div>
+    </div>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw32sE4O7fdNL3Ivt4i5R1TJ0MunsZSyKpevlHEQYy_bzJ4Zw2AnWq1Yho3ZQWxp8FFug/exec'
+        const form = document.forms['SEO-Affiliate']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+<!-- AKfycbw32sE4O7fdNL3Ivt4i5R1TJ0MunsZSyKpevlHEQYy_bzJ4Zw2AnWq1Yho3ZQWxp8FFug -->
+<!-- https://script.google.com/macros/s/AKfycbw32sE4O7fdNL3Ivt4i5R1TJ0MunsZSyKpevlHEQYy_bzJ4Zw2AnWq1Yho3ZQWxp8FFug/exec -->

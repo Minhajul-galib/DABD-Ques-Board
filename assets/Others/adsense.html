@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency Bd | Adsense</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="container pb-5">
+    <div class="form-main pt-5 row">
+        <div class="form-div col-lg-6 col-md-12 text-center">
+            <h4 class="pt-5 pb-5 text-center">Adsense Related Question</h4>
+            <form method="post" name="Adsense-form" action="">
+                <div class="form-input">
+                    <input class="w-100" type="text" name="Student Name" placeholder="Your Name">
+                </div>    
+                <div class="form-input">
+                    <textarea class="w-100 my-2" name="Question" id="" rows="4" width="100" placeholder="Write Your Question"></textarea>
+                </div>
+                    <input class="all-button" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="sheet-div col-lg-6 mt-lg-0 mt-4 text-center">
+            <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/1rhcUjQMX44uDrRvhsK3u5PPB8K3PB3DDw_wjoGEerbA/edit?usp=sharing"></iframe>
+        </div>
+    </div>
+    
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwK4_hGIBRdJifxlw-hbK9C66ROUu_KVuxgVC_zF4v7MdLklcX3Y495GYiFaqCXCRo_kw/exec'
+        const form = document.forms['Adsense-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+
+<!-- Api: AKfycbwK4_hGIBRdJifxlw-hbK9C66ROUu_KVuxgVC_zF4v7MdLklcX3Y495GYiFaqCXCRo_kw -->
+<!-- URL: https://script.google.com/macros/s/AKfycbwK4_hGIBRdJifxlw-hbK9C66ROUu_KVuxgVC_zF4v7MdLklcX3Y495GYiFaqCXCRo_kw/exec -->

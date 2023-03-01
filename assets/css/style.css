@@ -1,0 +1,75 @@
+.all-button{
+    background-image: linear-gradient(45deg, #d5d5d5, #ededed);
+    border: none;
+    width: 100%;
+    padding: 7px 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+}
+.all-button:hover {
+background-image: linear-gradient(45deg, #ededed, #d5d5d5);
+}
+.question-sub{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px;
+    width: 88%;
+    margin: auto;
+}
+.question-sub-div {
+    padding: 7% 7%;
+    box-shadow: 0px 0px 3px 1px #ccc;
+    background-image: linear-gradient(45deg, #ebebeb, white);
+}
+.question-sub-div:hover {
+    background-image: linear-gradient(45deg, white, #ebebeb);
+}
+.question-sub-div:last-child{
+    grid-column: 2 / 2;
+
+}
+.form-div{
+    box-shadow: 0px 0px 3px 1px #ccc;
+    background-color: white;
+    padding: 3% 3%;
+}
+.form-div h4{
+   font-family: 'Times New Roman', Times, serif; 
+}
+.sheet-div{
+    box-shadow: 0px 0px 3px 1px #ccc;
+    padding: 2% 1%;
+    background-color: white;
+    min-height: 80vh;
+}
+.form-input input, .form-input textarea{
+    border: none;
+    box-shadow: inset 0px 0px 6px 2px #ccc;
+    padding: 8px 9px;
+    font-size: 16px;
+    font-family: fangsong;
+}
+
+.form-input input:focus-visible, .form-input textarea:focus-visible {
+    outline: none;
+    border: 1px dashed #d5e288;
+}
+#docs-toolbar-wrapper{
+    display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .question-sub{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+@media only screen and (max-width: 576px) {
+    .question-sub{
+        display: block;
+    }
+    .question-sub-div{
+        margin-top: 4%;
+    }
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency Bd | Understanding Digital Marketing</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="container pb-5">
+    
+    <div class="form-main row pt-5">
+        <div class="form-div col-lg-6 col-md-12 text-center">
+            <h4 class="pt-4 pb-3 text-center">Understanding Digital Marketing Related Question</h4>
+            <form method="post" name="Understanding-Digital-Marketing" action="">
+                <div class="form-input">
+                    <input class="w-100" type="text" name="Student Name" placeholder="Your Name">
+                </div>    
+                <div class="form-input">
+                    <textarea class="w-100 my-2" name="Question" id="" rows="4" width="100" placeholder="Write Your Question"></textarea>
+                </div>
+                    <input class="all-button" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="sheet-div col-lg-6 col-md-12 mt-lg-0 mt-4 text-center">
+            <iframe width="100%" height="100%" id="iframe-main" src="https://docs.google.com/spreadsheets/d/1PRYLjUgySgZa6bq57ZzdP-lWJ9JTM8HTOnsVcBmTswc/edit?usp=sharing"></iframe>
+        </div>
+    </div>
+        
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhfCrr3ZFL1KkXJsuRfo7ncKepJrmvdiUJD2jRNyNbLceY4kSsofMnlr6rFsySzlZJGg/exec'
+        const form = document.forms['Understanding-Digital-Marketing']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        });
+        
+
+
+      </script>
+      <script src="/assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- Dev Id: AKfycbz8AoYCV5ICGeTI4uM4eT2GM4fyQmH_qksOu4hZKUVTvgIBGLqYpNGlfcdeKmQsoOUP8Q -->
+<!-- Script ID: https://script.google.com/macros/s/AKfycbz8AoYCV5ICGeTI4uM4eT2GM4fyQmH_qksOu4hZKUVTvgIBGLqYpNGlfcdeKmQsoOUP8Q/exec -->
